@@ -163,17 +163,12 @@ button { font-family: inherit; cursor: pointer; }
 
 .nav__logo em, .footer__logo em { font-style: italic; color: var(--gold); }
 
-.nav__monogram {
-  display: grid;
-  place-items: center;
+.logo-img {
   width: 42px;
   height: 42px;
   border: 1px solid var(--gold);
   border-radius: 50%;
-  font-family: var(--font-display);
-  font-size: 1rem;
-  letter-spacing: 0.05em;
-  color: var(--gold);
+  object-fit: cover;
 }
 
 .nav__links { display: flex; align-items: center; gap: clamp(1rem, 2.4vw, 2rem); font-size: 0.92rem; font-weight: 400; }
@@ -252,23 +247,27 @@ button { font-family: inherit; cursor: pointer; }
 .hero__content {
   position: relative;
   z-index: 2;
-  width: min(820px, 92%);
+  width: min(1200px, 94%);
   padding-top: 4rem;
 }
 
 .hero__eyebrow {
   letter-spacing: 0.34em;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: clamp(0.85rem, 1.3vw, 1.05rem);
   color: var(--gold-soft);
   margin-bottom: 1.2rem;
 }
 
+/* clamp(min mobile, fluide, max grand écran) : responsive sans media query */
+.hero__title { font-size: clamp(3rem, 7vw, 5.4rem); }
+
 .hero__title em { color: var(--gold-soft); }
 
 .hero__sub {
-  max-width: 560px;
+  max-width: 640px;
   margin: 1.4rem auto 2.2rem;
+  font-size: clamp(1.05rem, 1.7vw, 1.35rem);
   color: rgba(250, 247, 241, 0.85);
 }
 
@@ -409,6 +408,15 @@ button { font-family: inherit; cursor: pointer; }
   color: var(--ink);
   border: none;
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+/* La carte mise en avant garde son fond ivoire : élévation + halo doré au survol */
+.service--featured:hover {
+  background: var(--ivory);
+  border-color: transparent;
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 32px 72px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(185, 148, 88, 0.45);
 }
 
 .service__flag {
@@ -450,8 +458,9 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 .service ul li::before {
-  content: "—";
+  content: "✦";
   color: var(--gold);
+  font-size: 0.7em;
   margin-right: 0.55rem;
 }
 
@@ -896,15 +905,22 @@ input[type="range"] {
 .chat-widget__toggle {
   width: 58px;
   height: 58px;
-  border: none;
+  padding: 0;
+  border: 1px solid var(--gold);
   border-radius: 50%;
   background: var(--pine);
-  color: var(--gold-soft);
   display: grid;
   place-items: center;
+  overflow: hidden;
   cursor: pointer;
   box-shadow: var(--shadow);
   transition: var(--transition);
+}
+
+.chat-widget__toggle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .chat-widget__toggle:hover {
@@ -924,30 +940,6 @@ input[type="range"] {
 }
 
 .chat-widget__panel[hidden] { display: none; }
-
-.chat-widget__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 0.75rem 1rem;
-  background: var(--pine);
-  color: var(--ivory);
-  font-family: var(--font-display);
-  font-size: 1.05rem;
-}
-
-.chat-widget__close {
-  border: none;
-  background: none;
-  color: var(--ivory);
-  font-size: 1.6rem;
-  line-height: 1;
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.chat-widget__close:hover { color: var(--gold-soft); }
 
 .chat-widget__panel iframe {
   flex: 1;

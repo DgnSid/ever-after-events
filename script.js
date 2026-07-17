@@ -207,7 +207,6 @@ document.addEventListener("DOMContentLoaded", () => {
   /* ---------- 7. Assistant de chat (Chatbase) ---------- */
   const chatToggle = document.getElementById("chatToggle");
   const chatPanel = document.getElementById("chatPanel");
-  const chatClose = document.getElementById("chatClose");
   const chatFrame = document.getElementById("chatFrame");
   const chatTeaser = document.getElementById("chatTeaser");
   const chatTeaserClose = document.getElementById("chatTeaserClose");
@@ -224,7 +223,6 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   chatToggle.addEventListener("click", () => setChatOpen(chatPanel.hidden));
-  chatClose.addEventListener("click", () => setChatOpen(false));
 
   // Bulle d'accroche affichée peu après le chargement, tant que le chat est fermé.
   setTimeout(() => {
