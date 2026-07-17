@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ever After Events — Agence d'organisation de mariages</title>
+  <meta name="description" content="Ever After Events conçoit des mariages élégants et sur mesure. De la première idée au dernier toast, confiez-nous le plus beau jour de votre vie." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="#accueil" aria-label="Ever After Events — retour à l'accueil">
+      <span class="nav__monogram">EA</span>
+      <span class="nav__name">Ever After <em>Events</em></span>
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Navigation principale">
+      <a href="#apropos">À propos</a>
+      <a href="#services">Nos services</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#avis">Avis</a>
+      <a href="#simulateur">Simulateur</a>
+      <a href="#contact" class="nav__cta">Nous contacter</a>
+    </nav>
+    <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- ===== 01 · HERO ===== -->
+    <section class="hero" id="accueil">
+      <div class="hero__image" role="img" aria-label="Un couple de jeunes mariés au coucher du soleil"></div>
+      <div class="hero__veil"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal">Agence d'organisation de mariages</p>
+        <h1 class="hero__title reveal">Le plus beau jour de votre vie<br /><em>mérite d'être inoubliable</em></h1>
+        <p class="hero__sub reveal">De la première idée au dernier toast, Ever After Events imagine, orchestre et sublime votre mariage — pour que vous n'ayez qu'une seule chose à faire&nbsp;: dire oui.</p>
+        <div class="hero__actions reveal">
+          <a class="btn btn--gold" href="#simulateur">Estimer mon mariage</a>
+          <a class="btn btn--ghost" href="#services">Découvrir nos services</a>
+        </div>
+      </div>
+      <a class="hero__scroll" href="#apropos" aria-label="Faire défiler vers la section À propos">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ===== 02 · À PROPOS ===== -->
+    <section class="about section" id="apropos">
+      <div class="container about__grid">
+        <div class="about__media reveal">
+          <div class="about__photo about__photo--main" role="img" aria-label="Table de réception décorée de fleurs"></div>
+          <div class="about__photo about__photo--accent" role="img" aria-label="Alliance de mariage posée sur un bouquet"></div>
+          <div class="about__badge">
+            <strong>120+</strong>
+            <span>mariages orchestrés</span>
+          </div>
+        </div>
+        <div class="about__text">
+          <p class="eyebrow reveal">À propos</p>
+          <h2 class="reveal">Une agence née d'une conviction&nbsp;: <em>chaque histoire d'amour est unique</em></h2>
+          <p class="reveal">Ever After Events est une jeune agence portée par une équipe de passionnés de l'événementiel. Notre métier&nbsp;: transformer votre histoire en une célébration qui vous ressemble — élégante, fluide et sans fausse note.</p>
+          <p class="reveal">Nous croyons qu'un mariage réussi se joue dans les détails&nbsp;: la lumière d'une allée au crépuscule, le tempo d'une première danse, le sourire d'invités qui n'ont à penser à rien. C'est précisément là que nous excellons.</p>
+          <ul class="about__values reveal">
+            <li><strong>Écoute</strong><span>Votre vision d'abord, toujours.</span></li>
+            <li><strong>Exigence</strong><span>Des prestataires triés sur le volet.</span></li>
+            <li><strong>Sérénité</strong><span>Le jour J, vous êtes invités à votre propre mariage.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 03 · NOS SERVICES ===== -->
+    <section class="services section section--dark" id="services">
+      <div class="container">
+        <p class="eyebrow eyebrow--light reveal">Nos services</p>
+        <h2 class="section__title reveal">Trois formules, <em>une même promesse</em></h2>
+        <p class="section__lead reveal">Que vous rêviez d'un accompagnement complet ou d'un coup de maître sur la dernière ligne droite, nous avons pensé une formule pour vous.</p>
+
+        <div class="services__grid">
+          <article class="service reveal">
+            <span class="service__ornament">✦</span>
+            <h3>Coordination Jour J</h3>
+            <p class="service__tagline">Formule Essentielle</p>
+            <p>Vous avez tout organisé — nous veillons à ce que tout se déroule à la perfection. Régie complète, gestion des prestataires et des imprévus le jour de votre mariage.</p>
+            <ul>
+              <li>Rétro-planning du jour J</li>
+              <li>Coordination des prestataires</li>
+              <li>Présence de l'équipe de 8h à minuit</li>
+            </ul>
+          </article>
+
+          <article class="service service--featured reveal">
+            <span class="service__flag">La plus demandée</span>
+            <span class="service__ornament">✦</span>
+            <h3>Organisation complète</h3>
+            <p class="service__tagline">Formule Signature</p>
+            <p>De la recherche du lieu à la dernière danse, nous concevons et pilotons chaque étape de votre mariage, à vos côtés pendant toute l'aventure.</p>
+            <ul>
+              <li>Conception & scénographie sur mesure</li>
+              <li>Sélection et négociation des prestataires</li>
+              <li>Suivi budgétaire transparent</li>
+              <li>Coordination complète du jour J</li>
+            </ul>
+          </article>
+
+          <article class="service reveal">
+            <span class="service__ornament">✦</span>
+            <h3>Décoration & scénographie</h3>
+            <p class="service__tagline">Formule Atelier</p>
+            <p>Fleurs, lumières, arts de la table&nbsp;: notre studio imagine une direction artistique cohérente et la met en scène de la cérémonie à la réception.</p>
+            <ul>
+              <li>Moodboard & direction artistique</li>
+              <li>Décoration florale et mobilier</li>
+              <li>Installation et démontage inclus</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 04 · GALERIE ===== -->
+    <section class="gallery section" id="galerie">
+      <div class="container">
+        <p class="eyebrow reveal">Galerie</p>
+        <h2 class="section__title reveal">Des instants <em>qui durent toujours</em></h2>
+        <p class="section__lead reveal">Un aperçu des célébrations que nous avons eu l'honneur d'orchestrer.</p>
+      </div>
+      <div class="gallery__grid container" id="galleryGrid">
+        <!-- data-full = image affichée dans la visionneuse -->
+        <button class="gallery__item reveal" data-caption="Cérémonie en plein air au domaine des Cèdres" style="--img: url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80')"></button>
+        <button class="gallery__item reveal" data-caption="Échange des alliances" style="--img: url('https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=900&q=80')"></button>
+        <button class="gallery__item reveal" data-caption="Table d'honneur, réception aux chandelles" style="--img: url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=80')"></button>
+        <button class="gallery__item reveal" data-caption="Première danse" style="--img: url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=80')"></button>
+        <button class="gallery__item reveal" data-caption="Bouquet de la mariée" style="--img: url('https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=900&q=80')"></button>
+        <button class="gallery__item reveal" data-caption="Sortie des mariés" style="--img: url('https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=900&q=80')"></button>
+      </div>
+      <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox__close" id="lightboxClose" aria-label="Fermer la visionneuse">×</button>
+        <figure>
+          <div class="lightbox__img" id="lightboxImg"></div>
+          <figcaption id="lightboxCaption"></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== 05 · AVIS CLIENTS ===== -->
+    <section class="reviews section section--sage" id="avis">
+      <div class="container">
+        <p class="eyebrow reveal">Avis clients</p>
+        <h2 class="section__title reveal">Ils nous ont dit <em>oui</em></h2>
+
+        <div class="reviews__slider reveal" id="reviewsSlider">
+          <div class="reviews__track" id="reviewsTrack">
+            <blockquote class="review">
+              <p>«&nbsp;Nous voulions un mariage intime dans le jardin familial. L'équipe a transformé ce lieu que nous connaissions par cœur en un décor de rêve. Nos invités en parlent encore.&nbsp;»</p>
+              <footer><strong>Aïcha &amp; Julien</strong><span>Mariage champêtre · 80 invités</span><span class="review__stars" aria-label="5 étoiles sur 5">★★★★★</span></footer>
+            </blockquote>
+            <blockquote class="review">
+              <p>«&nbsp;Organiser un mariage à distance semblait impossible. Ever After a tout géré&nbsp;: visites en visio, comptes rendus précis, zéro mauvaise surprise. Le jour J était parfait.&nbsp;»</p>
+              <footer><strong>Clara &amp; Thomas</strong><span>Organisation complète · 150 invités</span><span class="review__stars" aria-label="5 étoiles sur 5">★★★★★</span></footer>
+            </blockquote>
+            <blockquote class="review">
+              <p>«&nbsp;La coordination du jour J a changé notre vie. Pour la première fois depuis des mois, nous avons simplement profité. Un investissement que nous recommandons à tous les couples.&nbsp;»</p>
+              <footer><strong>Sandra &amp; Kevin</strong><span>Coordination Jour J · 120 invités</span><span class="review__stars" aria-label="5 étoiles sur 5">★★★★★</span></footer>
+            </blockquote>
+            <blockquote class="review">
+              <p>«&nbsp;Leur scénographie a dépassé notre moodboard Pinterest — et pourtant, la barre était haute&nbsp;! Un sens du détail remarquable, dans le respect de notre budget.&nbsp;»</p>
+              <footer><strong>Inès &amp; Marc</strong><span>Décoration &amp; scénographie · 200 invités</span><span class="review__stars" aria-label="5 étoiles sur 5">★★★★★</span></footer>
+            </blockquote>
+          </div>
+          <div class="reviews__controls">
+            <button id="reviewPrev" aria-label="Avis précédent">←</button>
+            <div class="reviews__dots" id="reviewDots" role="tablist"></div>
+            <button id="reviewNext" aria-label="Avis suivant">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ✨ FONCTIONNALITÉ INNOVANTE · SIMULATEUR ===== -->
+    <section class="simulator section" id="simulateur">
+      <div class="container">
+        <p class="eyebrow reveal">Fonctionnalité exclusive</p>
+        <h2 class="section__title reveal">Simulez votre mariage <em>en 30 secondes</em></h2>
+        <p class="section__lead reveal">Ajustez les curseurs et obtenez instantanément une estimation personnalisée de votre célébration.</p>
+
+        <div class="simulator__card reveal">
+          <div class="simulator__form">
+            <div class="sim-field">
+              <label for="simGuests">Nombre d'invités <output id="simGuestsOut">100</output></label>
+              <input type="range" id="simGuests" min="20" max="400" step="10" value="100" />
+            </div>
+
+            <div class="sim-field">
+              <span class="sim-field__label" id="venueLabel">Type de lieu</span>
+              <div class="sim-choices" role="radiogroup" aria-labelledby="venueLabel">
+                <label><input type="radio" name="venue" value="salle" checked /><span>Salle de réception</span></label>
+                <label><input type="radio" name="venue" value="jardin" /><span>Jardin privé</span></label>
+                <label><input type="radio" name="venue" value="plage" /><span>Bord de mer</span></label>
+                <label><input type="radio" name="venue" value="domaine" /><span>Domaine d'exception</span></label>
+              </div>
+            </div>
+
+            <div class="sim-field">
+              <span class="sim-field__label" id="formulaLabel">Formule d'accompagnement</span>
+              <div class="sim-choices" role="radiogroup" aria-labelledby="formulaLabel">
+                <label><input type="radio" name="formula" value="jourj" /><span>Coordination Jour J</span></label>
+                <label><input type="radio" name="formula" value="complete" checked /><span>Organisation complète</span></label>
+                <label><input type="radio" name="formula" value="deco" /><span>Décoration seule</span></label>
+              </div>
+            </div>
+
+            <div class="sim-field">
+              <span class="sim-field__label">Options</span>
+              <div class="sim-options">
+                <label><input type="checkbox" id="optPhoto" /><span>Photographe &amp; vidéaste</span></label>
+                <label><input type="checkbox" id="optMusic" /><span>DJ &amp; orchestre live</span></label>
+                <label><input type="checkbox" id="optFlowers" /><span>Décoration florale premium</span></label>
+                <label><input type="checkbox" id="optCake" /><span>Wedding cake signature</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="simulator__result">
+            <p class="simulator__result-label">Estimation de votre mariage</p>
+            <p class="simulator__price"><span id="simPrice">0</span>&nbsp;€</p>
+            <p class="simulator__note" id="simSummary"></p>
+            <a class="btn btn--gold" href="#contact" id="simCta">Recevoir mon devis détaillé</a>
+            <p class="simulator__disclaimer">Estimation indicative — chaque projet fait l'objet d'un devis personnalisé.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 06 · CONTACT ===== -->
+    <section class="contact section section--dark" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__intro">
+          <p class="eyebrow eyebrow--light reveal">Contact</p>
+          <h2 class="reveal">Racontez-nous <em>votre histoire</em></h2>
+          <p class="reveal">Premier rendez-vous offert, sans engagement. Nous vous répondons sous 24&nbsp;heures.</p>
+          <ul class="contact__details reveal">
+            <li><span>📍</span> Cotonou, Bénin — déplacements dans toute la région</li>
+            <li><span>✉️</span> bonjour@everafterevents.com</li>
+            <li><span>📞</span> +229 01 23 45 67</li>
+            <li><span>🕘</span> Lun – Sam · 9h à 19h</li>
+          </ul>
+        </div>
+
+        <form class="contact__form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="cName">Vos prénoms</label>
+              <input id="cName" name="name" type="text" placeholder="Ex. Awa &amp; David" required />
+            </div>
+            <div class="form-field">
+              <label for="cEmail">Adresse e-mail</label>
+              <input id="cEmail" name="email" type="email" placeholder="vous@exemple.com" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="cDate">Date envisagée</label>
+              <input id="cDate" name="date" type="date" />
+            </div>
+            <div class="form-field">
+              <label for="cGuests">Nombre d'invités</label>
+              <input id="cGuests" name="guests" type="number" min="1" placeholder="120" />
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="cMessage">Votre projet</label>
+            <textarea id="cMessage" name="message" rows="4" placeholder="Parlez-nous de votre mariage de rêve…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--gold btn--full">Envoyer ma demande</button>
+          <p class="form-success" id="formSuccess" role="status" hidden>Merci&nbsp;! Votre demande a bien été envoyée. Nous revenons vers vous très vite. ✨</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <p class="footer__logo"><span class="nav__monogram">EA</span> Ever After <em>Events</em></p>
+        <p class="footer__tag">Développez vite. Aimez toujours.</p>
+      </div>
+      <nav class="footer__links" aria-label="Liens de pied de page">
+        <a href="#apropos">À propos</a>
+        <a href="#services">Nos services</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#avis">Avis clients</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer__legal">© 2026 Ever After Events — Site réalisé pour le Build Together Challenge.</p>
+    </div>
+  </footer>
+
+  <!-- ===== CHAT ASSISTANT (Chatbase) ===== -->
+  <div class="chat-widget" id="chatWidget">
+    <div class="chat-widget__panel" id="chatPanel" role="dialog" aria-label="Assistant Ever After Events" hidden>
+      <div class="chat-widget__header">
+        <p><span class="nav__monogram">EA</span> Assistant Ever After</p>
+        <button type="button" class="chat-widget__close" id="chatClose" aria-label="Fermer le chat">&times;</button>
+      </div>
+      <iframe
+        id="chatFrame"
+        title="Assistant conversationnel Ever After Events"
+        data-src="https://www.chatbase.co/chatbot-iframe/X6MxZfvTu34TA4c9A8Tlv"
+        frameborder="0"
+        allow="microphone"
+      ></iframe>
+    </div>
+    <button type="button" class="chat-widget__toggle" id="chatToggle" aria-expanded="false" aria-controls="chatPanel" aria-label="Ouvrir le chat avec notre assistant">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+      </svg>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
