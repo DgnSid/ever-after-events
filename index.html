@@ -22,8 +22,8 @@
       <a href="#apropos">À propos</a>
       <a href="#services">Nos services</a>
       <a href="#galerie">Galerie</a>
-      <a href="#avis">Avis</a>
-      <a href="#simulateur">Simulateur</a>
+      <a href="#avis">Avis Clients</a>
+      <a href="#simulateur">Simulateur de devis</a>
       <a href="#contact" class="nav__cta">Nous contacter</a>
     </nav>
     <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
@@ -230,7 +230,7 @@
 
           <div class="simulator__result">
             <p class="simulator__result-label">Estimation de votre mariage</p>
-            <p class="simulator__price"><span id="simPrice">0</span>&nbsp;€</p>
+            <p class="simulator__price"><span id="simPrice">0</span>&nbsp;FCFA</p>
             <p class="simulator__note" id="simSummary"></p>
             <a class="btn btn--gold" href="#contact" id="simCta">Recevoir mon devis détaillé</a>
             <p class="simulator__disclaimer">Estimation indicative — chaque projet fait l'objet d'un devis personnalisé.</p>
@@ -248,8 +248,8 @@
           <p class="reveal">Premier rendez-vous offert, sans engagement. Nous vous répondons sous 24&nbsp;heures.</p>
           <ul class="contact__details reveal">
             <li><span>📍</span> Cotonou, Bénin — déplacements dans toute la région</li>
-            <li><span>✉️</span> bonjour@everafterevents.com</li>
-            <li><span>📞</span> +229 01 23 45 67</li>
+            <li><span>✉️</span> contact@everafterevents.com</li>
+            <li><span>📞</span> +229 01 63 72 45 67</li>
             <li><span>🕘</span> Lun – Sam · 9h à 19h</li>
           </ul>
         </div>
@@ -318,6 +318,10 @@
         frameborder="0"
         allow="microphone"
       ></iframe>
+    </div>
+    <div class="chat-widget__teaser" id="chatTeaser" hidden>
+      <button type="button" class="chat-widget__teaser-close" id="chatTeaserClose" aria-label="Masquer le message">&times;</button>
+      <p>👋 Une question sur l'organisation de votre mariage&nbsp;? Je suis là pour vous aider.</p>
     </div>
     <button type="button" class="chat-widget__toggle" id="chatToggle" aria-expanded="false" aria-controls="chatPanel" aria-label="Ouvrir le chat avec notre assistant">
       <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">

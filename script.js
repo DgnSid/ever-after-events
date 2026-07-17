@@ -117,23 +117,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const priceEl = document.getElementById("simPrice");
   const summaryEl = document.getElementById("simSummary");
 
-  // Barème (indicatif) — facilement ajustable par l'équipe
+  // Barème indicatif en FCFA — basé sur les tarifs moyens du marché
+  // (Bénin / Côte d'Ivoire, 2025-2026) — facilement ajustable par l'équipe
   const PRICING = {
-    perGuest: 55, // traiteur + logistique par invité
-    venue: { salle: 1800, jardin: 1200, plage: 2400, domaine: 4500 },
+    perGuest: 20000, // traiteur + logistique par invité
+    venue: { salle: 800000, jardin: 500000, plage: 1000000, domaine: 2000000 },
     venueLabel: {
       salle: "salle de réception",
       jardin: "jardin privé",
       plage: "bord de mer",
       domaine: "domaine d'exception",
     },
-    formula: { jourj: 1500, complete: 3800, deco: 2200 },
+    formula: { jourj: 400000, complete: 1500000, deco: 800000 },
     formulaLabel: {
       jourj: "coordination Jour J",
       complete: "organisation complète",
       deco: "décoration & scénographie",
     },
-    options: { optPhoto: 2200, optMusic: 1800, optFlowers: 1400, optCake: 600 },
+    options: { optPhoto: 450000, optMusic: 600000, optFlowers: 750000, optCake: 150000 },
   };
 
   let displayed = 0;
@@ -208,10 +209,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const chatPanel = document.getElementById("chatPanel");
   const chatClose = document.getElementById("chatClose");
   const chatFrame = document.getElementById("chatFrame");
+  const chatTeaser = document.getElementById("chatTeaser");
+  const chatTeaserClose = document.getElementById("chatTeaserClose");
+
+  const hideTeaser = () => (chatTeaser.hidden = true);
 
   const setChatOpen = (open) => {
     // L'iframe n'est chargée qu'à la première ouverture pour ne pas ralentir la page.
     if (open && !chatFrame.src) chatFrame.src = chatFrame.dataset.src;
+    if (open) hideTeaser();
     chatPanel.hidden = !open;
     chatToggle.setAttribute("aria-expanded", String(open));
     chatToggle.setAttribute("aria-label", open ? "Réduire le chat" : "Ouvrir le chat avec notre assistant");
@@ -219,4 +225,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   chatToggle.addEventListener("click", () => setChatOpen(chatPanel.hidden));
   chatClose.addEventListener("click", () => setChatOpen(false));
+
+  // Bulle d'accroche affichée peu après le chargement, tant que le chat est fermé.
+  setTimeout(() => {
+    if (chatPanel.hidden) chatTeaser.hidden = false;
+  }, 2500);
+  chatTeaserClose.addEventListener("click", hideTeaser);
 });
