@@ -35,7 +35,11 @@
 
     <!-- ===== 01 · HERO ===== -->
     <section class="hero" id="accueil">
-      <div class="hero__image" role="img" aria-label="Un couple de jeunes mariés au coucher du soleil"></div>
+      <div class="hero__image" role="img" aria-label="Un couple de jeunes mariés au coucher du soleil">
+        <video class="hero__video" autoplay muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1">
+          <source src="video.mp4" type="video/mp4" />
+        </video>
+      </div>
       <div class="hero__veil"></div>
       <div class="hero__content">
         <p class="hero__eyebrow reveal">Agence d'organisation de mariages</p>
@@ -135,11 +139,12 @@
       <div class="gallery__grid container" id="galleryGrid">
         <!-- data-full = image affichée dans la visionneuse -->
         <button class="gallery__item reveal" data-caption="Cérémonie en plein air au domaine des Cèdres" style="--img: url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80')"></button>
-        <button class="gallery__item reveal" data-caption="Échange des alliances" style="--img: url('https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=900&q=80')"></button>
+        <button class="gallery__item reveal" data-caption="Échange des alliances" style="--img: url('1.jpeg')"></button>
         <button class="gallery__item reveal" data-caption="Table d'honneur, réception aux chandelles" style="--img: url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=80')"></button>
-        <button class="gallery__item reveal" data-caption="Première danse" style="--img: url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=80')"></button>
+        <button class="gallery__item reveal" data-caption="Première danse" style="--img: url('4.jpeg')"></button>
         <button class="gallery__item reveal" data-caption="Bouquet de la mariée" style="--img: url('https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=900&q=80')"></button>
         <button class="gallery__item reveal" data-caption="Sortie des mariés" style="--img: url('https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=900&q=80')"></button>
+        <button class="gallery__item reveal" data-caption="La mariée et son voile" style="--img: url('3.jpeg')"></button>
       </div>
       <div class="lightbox" id="lightbox" aria-hidden="true">
         <button class="lightbox__close" id="lightboxClose" aria-label="Fermer la visionneuse">×</button>
